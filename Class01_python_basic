@@ -19,7 +19,69 @@ print(s.upper())
 print(s.rjust(7))
 print(s.center(7))
 print(s.replace('l', '(ell)'))
-print('  world '.strip())   # ?
+print('  world '.strip())   ### ?
 
 
+# List
+# A list is the Python equivalent of an array, but is resizeavle and can contain elements of different types
+xs = [3, 1, 2]
+print(xs, xs[2])
+print(xs[-1])
+xs[2] = 'foo'
+x = xs.pop()   ###
+print(x, xs)
+
+
+# for loop with List
+# you can loop over the elementsof a list like this:
+animals = ['cat', 'dog', 'monkey']
+for animal in animals:
+    print(animal)
+
+# if you want access to the index of each element within the body of a loop, use the bullt-in enumerate function:
+for idx, animal in enumerate(animals):
+    print('#%d: %s' % (idx+1, animal))
+    
+# List comprehensions
+# Loop보다 좋음 
+# 생략
+
+# Dictionares
+# 생략
+
+# for loop of Dictionaries
+# 생략
+
+# Dictionary comprehensions
+# 생략
+
+# Sets
+# 생략
+
+# for Loop of Set
+# 생략
+
+# Set comprehensions
+# 생략
+
+# Functions
+# 생략
+
+# Classes
+
+
+
+# *** Numpy 주의점 ***     b를 변경하면 a도 같이 변경되므로 .copy()를 사용해야 함 !!
+import numpy as np
+
+a,b = np.array([1,2]),np.array([3,4})
+
+print(a+b, type(a+b))
+
+# 생략
+
+
+
+# *** 클래스 객체개념 ***
+# 생략
 
